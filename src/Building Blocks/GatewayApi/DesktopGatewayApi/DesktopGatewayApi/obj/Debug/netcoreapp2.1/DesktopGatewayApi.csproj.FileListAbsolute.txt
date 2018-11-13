@@ -1,0 +1,3 @@
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Building Blocks\GatewayApi\DesktopGatewayApi\DesktopGatewayApi\obj\Debug\netcoreapp2.1\DesktopGatewayApi.csproj.CoreCompileInputs.cache
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Building Blocks\GatewayApi\DesktopGatewayApi\DesktopGatewayApi\obj\Debug\netcoreapp2.1\DesktopGatewayApi.AssemblyInfoInputs.cache
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Building Blocks\GatewayApi\DesktopGatewayApi\DesktopGatewayApi\obj\Debug\netcoreapp2.1\DesktopGatewayApi.AssemblyInfo.cs
