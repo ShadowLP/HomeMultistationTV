@@ -1,0 +1,102 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Building Blocks", "Building Blocks", "{21799A94-F2A1-4A9A-AAFA-8454229C12B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesktopApp", "DesktopApp", "{B45D2273-2B5F-4C23-95C2-86C413D0A911}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{7FEA5C26-D3FA-43EE-A9DB-4E93714DC06B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Windows", "Windows", "{7FA4AF37-1226-450A-9A89-E54B104ED06D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeMultistationTV.WindowsDesktop.Domain", "src\DesktopApp\Windows\HomeMultistationTV.WindowsDesktop.Domain\HomeMultistationTV.WindowsDesktop.Domain.csproj", "{85F5BC0A-D527-43AD-94FB-6E9109E248A7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeMultistationTV.WindowsDesktop.Infrastruct", "src\DesktopApp\Windows\HomeMultistationTV.WindowsDesktop.Infrastruct\HomeMultistationTV.WindowsDesktop.Infrastruct.csproj", "{598CDB6F-350F-4391-8AC5-2A13230497C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeMultistation.TV.WindowDesktop.App", "src\DesktopApp\Windows\HomeMultistation.TV.WindowDesktop.App\HomeMultistation.TV.WindowDesktop.App.csproj", "{3297FAFD-CC7E-4032-88DC-34301CA23200}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Weather", "Weather", "{21478D97-7FBB-40C7-90F8-65BFD477AB73}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{28D25D57-3288-4571-B9B2-0FCB314A2149}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weather.Domain", "src\Services\Weather\Weather.Domain\Weather.Domain.csproj", "{3E95727B-6C34-47A4-9A2B-309B1F90A6DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weather.Infrastructure", "src\Services\Weather\Weather.Infrastructure\Weather.Infrastructure.csproj", "{B311C2ED-756B-4C4D-840A-9DF80013DEA0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weather.API", "src\Services\Weather\Weather.API\Weather.API.csproj", "{1F30CCA3-5D6A-4EEA-8A9A-7A053854495E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GatewayAPI", "GatewayAPI", "{F48553A4-3542-4FF8-B1DD-0C564D995C4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopGatewayApi", "DesktopGatewayApi\DesktopGatewayApi.csproj", "{44090A71-F643-4ED6-8CC5-449AC2643861}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopGatewayApi.Infrastructure", "DesktopGatewayApi.Infrastructure\DesktopGatewayApi.Infrastructure.csproj", "{31CB7B55-8F50-418D-9909-77011F8272A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopGatewayApi.Domain", "DesktopGatewayApi.Domain\DesktopGatewayApi.Domain.csproj", "{440654A2-D23C-4F2A-98B7-9FDE4B411BAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{85F5BC0A-D527-43AD-94FB-6E9109E248A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85F5BC0A-D527-43AD-94FB-6E9109E248A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85F5BC0A-D527-43AD-94FB-6E9109E248A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85F5BC0A-D527-43AD-94FB-6E9109E248A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{598CDB6F-350F-4391-8AC5-2A13230497C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{598CDB6F-350F-4391-8AC5-2A13230497C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{598CDB6F-350F-4391-8AC5-2A13230497C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{598CDB6F-350F-4391-8AC5-2A13230497C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3297FAFD-CC7E-4032-88DC-34301CA23200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3297FAFD-CC7E-4032-88DC-34301CA23200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3297FAFD-CC7E-4032-88DC-34301CA23200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3297FAFD-CC7E-4032-88DC-34301CA23200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E95727B-6C34-47A4-9A2B-309B1F90A6DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E95727B-6C34-47A4-9A2B-309B1F90A6DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E95727B-6C34-47A4-9A2B-309B1F90A6DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E95727B-6C34-47A4-9A2B-309B1F90A6DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B311C2ED-756B-4C4D-840A-9DF80013DEA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B311C2ED-756B-4C4D-840A-9DF80013DEA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B311C2ED-756B-4C4D-840A-9DF80013DEA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B311C2ED-756B-4C4D-840A-9DF80013DEA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F30CCA3-5D6A-4EEA-8A9A-7A053854495E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F30CCA3-5D6A-4EEA-8A9A-7A053854495E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F30CCA3-5D6A-4EEA-8A9A-7A053854495E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F30CCA3-5D6A-4EEA-8A9A-7A053854495E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44090A71-F643-4ED6-8CC5-449AC2643861}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44090A71-F643-4ED6-8CC5-449AC2643861}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44090A71-F643-4ED6-8CC5-449AC2643861}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44090A71-F643-4ED6-8CC5-449AC2643861}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31CB7B55-8F50-418D-9909-77011F8272A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31CB7B55-8F50-418D-9909-77011F8272A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31CB7B55-8F50-418D-9909-77011F8272A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31CB7B55-8F50-418D-9909-77011F8272A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{440654A2-D23C-4F2A-98B7-9FDE4B411BAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{440654A2-D23C-4F2A-98B7-9FDE4B411BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{440654A2-D23C-4F2A-98B7-9FDE4B411BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{440654A2-D23C-4F2A-98B7-9FDE4B411BAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7FA4AF37-1226-450A-9A89-E54B104ED06D} = {B45D2273-2B5F-4C23-95C2-86C413D0A911}
+		{85F5BC0A-D527-43AD-94FB-6E9109E248A7} = {7FA4AF37-1226-450A-9A89-E54B104ED06D}
+		{598CDB6F-350F-4391-8AC5-2A13230497C1} = {7FA4AF37-1226-450A-9A89-E54B104ED06D}
+		{3297FAFD-CC7E-4032-88DC-34301CA23200} = {7FA4AF37-1226-450A-9A89-E54B104ED06D}
+		{21478D97-7FBB-40C7-90F8-65BFD477AB73} = {7FEA5C26-D3FA-43EE-A9DB-4E93714DC06B}
+		{28D25D57-3288-4571-B9B2-0FCB314A2149} = {21478D97-7FBB-40C7-90F8-65BFD477AB73}
+		{3E95727B-6C34-47A4-9A2B-309B1F90A6DF} = {21478D97-7FBB-40C7-90F8-65BFD477AB73}
+		{B311C2ED-756B-4C4D-840A-9DF80013DEA0} = {21478D97-7FBB-40C7-90F8-65BFD477AB73}
+		{1F30CCA3-5D6A-4EEA-8A9A-7A053854495E} = {21478D97-7FBB-40C7-90F8-65BFD477AB73}
+		{F48553A4-3542-4FF8-B1DD-0C564D995C4F} = {21799A94-F2A1-4A9A-AAFA-8454229C12B6}
+		{44090A71-F643-4ED6-8CC5-449AC2643861} = {F48553A4-3542-4FF8-B1DD-0C564D995C4F}
+		{31CB7B55-8F50-418D-9909-77011F8272A0} = {F48553A4-3542-4FF8-B1DD-0C564D995C4F}
+		{440654A2-D23C-4F2A-98B7-9FDE4B411BAE} = {F48553A4-3542-4FF8-B1DD-0C564D995C4F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21C8C599-054B-4837-B441-7E92C7DE5983}
+	EndGlobalSection
+EndGlobal
