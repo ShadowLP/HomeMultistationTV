@@ -1,0 +1,9 @@
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.Infrastructure\bin\Debug\netstandard2.0\Weather.Infrastructure.deps.json
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.Infrastructure\bin\Debug\netstandard2.0\Weather.Infrastructure.dll
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.Infrastructure\bin\Debug\netstandard2.0\Weather.Infrastructure.pdb
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.Infrastructure\obj\Debug\netstandard2.0\Weather.Infrastructure.csprojAssemblyReference.cache
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.Infrastructure\obj\Debug\netstandard2.0\Weather.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.Infrastructure\obj\Debug\netstandard2.0\Weather.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.Infrastructure\obj\Debug\netstandard2.0\Weather.Infrastructure.AssemblyInfo.cs
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.Infrastructure\obj\Debug\netstandard2.0\Weather.Infrastructure.dll
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.Infrastructure\obj\Debug\netstandard2.0\Weather.Infrastructure.pdb
