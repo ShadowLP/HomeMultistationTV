@@ -4340,6 +4340,29 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "Weather.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Weather.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Weather.Domain.dll": {}
+        }
+      },
+      "Weather.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Weather.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Weather.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Weather.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -11536,13 +11559,24 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "Weather.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Weather.Domain/Weather.Domain.csproj",
+      "msbuildProject": "../Weather.Domain/Weather.Domain.csproj"
+    },
+    "Weather.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Weather.Infrastructure/Weather.Infrastructure.csproj",
+      "msbuildProject": "../Weather.Infrastructure/Weather.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
-      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.0.1916590"
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.0.1916590",
+      "Weather.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -11574,7 +11608,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\roman.guschin\\Documents\\GitHub\\HomeMultistationTV\\src\\Services\\Weather\\Weather.Infrastructure\\Weather.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\roman.guschin\\Documents\\GitHub\\HomeMultistationTV\\src\\Services\\Weather\\Weather.Infrastructure\\Weather.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

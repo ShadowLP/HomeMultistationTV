@@ -4,4 +4,8 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Weather.Domain\Weather.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
