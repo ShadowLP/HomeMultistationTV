@@ -9,7 +9,11 @@ C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\
 C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.API\obj\Debug\netcoreapp2.1\Weather.API.csprojAssemblyReference.cache
 C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.API\obj\Debug\netcoreapp2.1\Weather.API.RazorAssemblyInfo.cache
 C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.API\obj\Debug\netcoreapp2.1\Weather.API.RazorAssemblyInfo.cs
-C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.API\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.API\obj\Debug\netcoreapp2.1\Weather.API.RazorTargetAssemblyInfo.cache
 C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.API\obj\Debug\netcoreapp2.1\Weather.API.dll
 C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.API\obj\Debug\netcoreapp2.1\Weather.API.pdb
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.API\bin\Debug\netcoreapp2.1\Weather.Domain.dll
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.API\bin\Debug\netcoreapp2.1\Weather.Infrastructure.dll
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.API\bin\Debug\netcoreapp2.1\Weather.Infrastructure.pdb
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.API\bin\Debug\netcoreapp2.1\Weather.Domain.pdb
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.API\obj\Debug\netcoreapp2.1\Weather.API.csproj.CopyComplete
