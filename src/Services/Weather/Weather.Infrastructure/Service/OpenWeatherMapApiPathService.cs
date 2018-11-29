@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.Configuration;
-using System;
 using Weather.Infrastructure.Interface;
 
 namespace Weather.Infrastructure.Service
@@ -15,17 +14,17 @@ namespace Weather.Infrastructure.Service
 
         public string GetWeatherByCityNamePath(string name)
         {
-            return name;
+            return $"{_settings.GetValue<string>("GetWeatherURL")}?q=name";
         }
 
         public string GetWeatherByGeoCoordinatesPath(double lat, double lon)
         {
-            throw new NotImplementedException();
+            return $"{_settings.GetValue<string>("GetWeatherURL")}?lat={lat}&lon={lon}";
         }
 
         public string GetWeatherByZipCodePath(string zipCode)
         {
-            throw new NotImplementedException();
+            return $"{_settings.GetValue<string>("GetWeatherURL")}?zip={zipCode}";
         }
     }
 }

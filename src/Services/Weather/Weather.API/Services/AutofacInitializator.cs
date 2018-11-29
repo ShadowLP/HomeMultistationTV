@@ -41,6 +41,11 @@ namespace Weather.API.Services
                 .RegisterType<OpenWeatherMapApiPathService>()
                 .As<IOpenWeatherMapApiPathService>()
                 .WithParameter("setting", _settings);
+
+            _builder
+                .RegisterType<WeatherHttpClient>()
+                .As<IWeatherHttpClient>()
+                .SingleInstance();
         }
 
         private void SetTranslators()
