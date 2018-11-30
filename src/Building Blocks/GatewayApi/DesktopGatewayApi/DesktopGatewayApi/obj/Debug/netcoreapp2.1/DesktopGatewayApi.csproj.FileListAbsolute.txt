@@ -1,3 +1,14 @@
 C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Building Blocks\GatewayApi\DesktopGatewayApi\DesktopGatewayApi\obj\Debug\netcoreapp2.1\DesktopGatewayApi.csproj.CoreCompileInputs.cache
 C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Building Blocks\GatewayApi\DesktopGatewayApi\DesktopGatewayApi\obj\Debug\netcoreapp2.1\DesktopGatewayApi.AssemblyInfoInputs.cache
 C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Building Blocks\GatewayApi\DesktopGatewayApi\DesktopGatewayApi\obj\Debug\netcoreapp2.1\DesktopGatewayApi.AssemblyInfo.cs
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Building Blocks\GatewayApi\DesktopGatewayApi\DesktopGatewayApi\bin\Debug\netcoreapp2.1\DesktopGatewayApi.deps.json
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Building Blocks\GatewayApi\DesktopGatewayApi\DesktopGatewayApi\bin\Debug\netcoreapp2.1\DesktopGatewayApi.runtimeconfig.json
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Building Blocks\GatewayApi\DesktopGatewayApi\DesktopGatewayApi\bin\Debug\netcoreapp2.1\DesktopGatewayApi.runtimeconfig.dev.json
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Building Blocks\GatewayApi\DesktopGatewayApi\DesktopGatewayApi\bin\Debug\netcoreapp2.1\DesktopGatewayApi.dll
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Building Blocks\GatewayApi\DesktopGatewayApi\DesktopGatewayApi\bin\Debug\netcoreapp2.1\DesktopGatewayApi.pdb
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Building Blocks\GatewayApi\DesktopGatewayApi\DesktopGatewayApi\obj\Debug\netcoreapp2.1\DesktopGatewayApi.csprojAssemblyReference.cache
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Building Blocks\GatewayApi\DesktopGatewayApi\DesktopGatewayApi\obj\Debug\netcoreapp2.1\DesktopGatewayApi.RazorAssemblyInfo.cache
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Building Blocks\GatewayApi\DesktopGatewayApi\DesktopGatewayApi\obj\Debug\netcoreapp2.1\DesktopGatewayApi.RazorAssemblyInfo.cs
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Building Blocks\GatewayApi\DesktopGatewayApi\DesktopGatewayApi\obj\Debug\netcoreapp2.1\DesktopGatewayApi.RazorTargetAssemblyInfo.cache
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Building Blocks\GatewayApi\DesktopGatewayApi\DesktopGatewayApi\obj\Debug\netcoreapp2.1\DesktopGatewayApi.dll
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Building Blocks\GatewayApi\DesktopGatewayApi\DesktopGatewayApi\obj\Debug\netcoreapp2.1\DesktopGatewayApi.pdb

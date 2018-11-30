@@ -1,0 +1,9 @@
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\DesktopApp\Windows\HomeMultistationTV.WindowsDesktop.Infrastruct\bin\Debug\netstandard2.0\HomeMultistationTV.WindowsDesktop.Infrastruct.deps.json
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\DesktopApp\Windows\HomeMultistationTV.WindowsDesktop.Infrastruct\bin\Debug\netstandard2.0\HomeMultistationTV.WindowsDesktop.Infrastruct.dll
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\DesktopApp\Windows\HomeMultistationTV.WindowsDesktop.Infrastruct\bin\Debug\netstandard2.0\HomeMultistationTV.WindowsDesktop.Infrastruct.pdb
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\DesktopApp\Windows\HomeMultistationTV.WindowsDesktop.Infrastruct\obj\Debug\netstandard2.0\HomeMultistationTV.WindowsDesktop.Infrastruct.csprojAssemblyReference.cache
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\DesktopApp\Windows\HomeMultistationTV.WindowsDesktop.Infrastruct\obj\Debug\netstandard2.0\HomeMultistationTV.WindowsDesktop.Infrastruct.csproj.CoreCompileInputs.cache
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\DesktopApp\Windows\HomeMultistationTV.WindowsDesktop.Infrastruct\obj\Debug\netstandard2.0\HomeMultistationTV.WindowsDesktop.Infrastruct.AssemblyInfoInputs.cache
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\DesktopApp\Windows\HomeMultistationTV.WindowsDesktop.Infrastruct\obj\Debug\netstandard2.0\HomeMultistationTV.WindowsDesktop.Infrastruct.AssemblyInfo.cs
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\DesktopApp\Windows\HomeMultistationTV.WindowsDesktop.Infrastruct\obj\Debug\netstandard2.0\HomeMultistationTV.WindowsDesktop.Infrastruct.dll
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\DesktopApp\Windows\HomeMultistationTV.WindowsDesktop.Infrastruct\obj\Debug\netstandard2.0\HomeMultistationTV.WindowsDesktop.Infrastruct.pdb
