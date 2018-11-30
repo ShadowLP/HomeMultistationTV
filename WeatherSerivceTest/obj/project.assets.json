@@ -1731,9 +1731,22 @@
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
       },
+      "Common.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Common.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.Domain.dll": {}
+        }
+      },
       "Weather.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Common.Domain": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Weather.Domain.dll": {}
         },
@@ -5942,6 +5955,11 @@
         "xunit.runner.visualstudio.2.3.1.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "Common.Domain/1.0.0": {
+      "type": "project",
+      "path": "../src/Common/Common.Domain/Common.Domain.csproj",
+      "msbuildProject": "../src/Common/Common.Domain/Common.Domain.csproj"
     },
     "Weather.Domain/1.0.0": {
       "type": "project",

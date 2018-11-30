@@ -3,7 +3,7 @@ using Weather.Domain.Entity;
 
 namespace Weather.Domain.Interface.Service
 {
-    public interface IWeatherGetterService
+    public interface IWeatherGetterService : IAppConfig
     {
         Task<WeatherDto> GetWeather(LocationDto location);
 

@@ -8,16 +8,11 @@ namespace GatewayApi.Infrastructure.Command
 {
     public abstract class AsyncCommand : IAsyncCommand
     {
-        private readonly ILogger _logger;
-
-        protected ILogger Logger
-        {
-            get { return _logger; }
-        }
+        private readonly ILogger Logger;
 
         protected AsyncCommand(ILogger logger)
         {
-            _logger = logger;
+            Logger = logger;
         }
 
         public async Task<ICommandCommonResults> Execute()
@@ -30,7 +25,7 @@ namespace GatewayApi.Infrastructure.Command
             }
             catch (Exception ex)
             {
-                _logger.LogError("Command exception", ex);
+                Logger.LogError("Command exception", ex);
                 results.Result = ECommandResult.ServerFailedWithException;
                 results.Message = ex.Message;
             }

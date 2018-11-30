@@ -1,8 +1,8 @@
 ﻿using Autofac;
 using Autofac.Extensions.DependencyInjection;
+using Common.Domain;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using NLog;
 using System;
 using Weather.Domain.Interface.Service;
 using Weather.Infrastructure.Interface;
@@ -44,8 +44,8 @@ namespace Weather.API.Services
                 .WithParameter("settings", _settings);
 
             _builder
-                .RegisterType<WeatherHttpClient>()
-                .As<IWeatherHttpClient>()
+                .RegisterType<CommonHttpClient>()
+                .As<IHttpClient>()
                 .SingleInstance();
         }
 
