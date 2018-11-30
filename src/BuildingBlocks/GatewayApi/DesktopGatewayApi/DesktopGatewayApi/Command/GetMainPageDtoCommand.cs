@@ -17,7 +17,7 @@ namespace DesktopGatewayApi.Command
 
         protected override Task<MainPageDto> Run()
         {
-            return;
+            return null;
         }
     }
 }

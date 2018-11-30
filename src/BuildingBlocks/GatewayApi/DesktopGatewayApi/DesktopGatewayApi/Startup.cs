@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using DesktopGatewayApi.Services;
+using GatewayApi.Infrastructure.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -22,9 +25,21 @@ namespace DesktopGatewayApi
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            
+            services.Configure<DesktopApiGatewayConfigService>(Configuration.GetSection("WeatherApiConfig"));
+
+            var configurationBuilder = new ConfigurationBuilder();
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "appsettings.json");
+            configurationBuilder.AddJsonFile(path, false);
+
+            var root = configurationBuilder.Build();
+            var appSettings = root.GetSection("WeatherApiConfig");
+
+            var autofacInit = new AutofacInitializator(appSettings);
+            return autofacInit.GetServiceContainer(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

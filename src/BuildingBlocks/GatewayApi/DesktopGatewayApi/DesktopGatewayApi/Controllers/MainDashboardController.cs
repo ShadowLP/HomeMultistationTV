@@ -10,7 +10,7 @@ namespace DesktopGatewayApi.Controllers
         [HttpGet]
         public ActionResult<MainPageDto> GetMainInfo()
         {
-            
+            return null;
         }
     }
 }
