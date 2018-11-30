@@ -18,3 +18,4 @@ C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\
 C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.API\bin\Debug\netcoreapp2.1\Weather.Domain.pdb
 C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.API\obj\Debug\netcoreapp2.1\Weather.API.csproj.CopyComplete
 C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.API\bin\Debug\netcoreapp2.1\nlog.config
+C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.API\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs

@@ -33,6 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesktopGatewayApi.Domain", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesktopGatewayApi", "src\Building Blocks\GatewayApi\DesktopGatewayApi\DesktopGatewayApi\DesktopGatewayApi.csproj", "{BED6994A-7316-48F2-A3CD-2E4369F30FCD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherSerivceTest", "WeatherSerivceTest\WeatherSerivceTest.csproj", "{BF604CCC-4790-4099-A8D6-5CA9BE1FFF65}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,10 @@ Global
 		{BED6994A-7316-48F2-A3CD-2E4369F30FCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BED6994A-7316-48F2-A3CD-2E4369F30FCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BED6994A-7316-48F2-A3CD-2E4369F30FCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF604CCC-4790-4099-A8D6-5CA9BE1FFF65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF604CCC-4790-4099-A8D6-5CA9BE1FFF65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF604CCC-4790-4099-A8D6-5CA9BE1FFF65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF604CCC-4790-4099-A8D6-5CA9BE1FFF65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,6 +94,7 @@ Global
 		{F48553A4-3542-4FF8-B1DD-0C564D995C4F} = {21799A94-F2A1-4A9A-AAFA-8454229C12B6}
 		{6C7A2D24-0F0F-4D64-ABE8-A8BBAECDE1DB} = {F48553A4-3542-4FF8-B1DD-0C564D995C4F}
 		{BED6994A-7316-48F2-A3CD-2E4369F30FCD} = {F48553A4-3542-4FF8-B1DD-0C564D995C4F}
+		{BF604CCC-4790-4099-A8D6-5CA9BE1FFF65} = {28D25D57-3288-4571-B9B2-0FCB314A2149}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {21C8C599-054B-4837-B441-7E92C7DE5983}

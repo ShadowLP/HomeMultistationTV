@@ -2,6 +2,7 @@
 using Autofac.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using NLog;
 using System;
 using Weather.Domain.Interface.Service;
 using Weather.Infrastructure.Interface;
@@ -40,7 +41,7 @@ namespace Weather.API.Services
             _builder
                 .RegisterType<OpenWeatherMapApiPathService>()
                 .As<IOpenWeatherMapApiPathService>()
-                .WithParameter("setting", _settings);
+                .WithParameter("settings", _settings);
 
             _builder
                 .RegisterType<WeatherHttpClient>()

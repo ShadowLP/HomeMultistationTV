@@ -4,6 +4,7 @@ using System;
 using System.Threading.Tasks;
 using Weather.Domain.Entity;
 using Weather.Domain.Interface.Service;
+using Weather.Infrastructure.Exceptions;
 using Weather.Infrastructure.Interface;
 
 namespace Weather.Infrastructure.Service
@@ -12,12 +13,12 @@ namespace Weather.Infrastructure.Service
     {
         private readonly IOpenWeatherMapApiPathService _openWeatherMapApiPathService;
         private readonly IWeatherHttpClient _weatherHttpClient;
-        private readonly ILogger _logger;
+        private readonly ILogger<OpenWeatherMapWeatherGetterService> _logger;
 
         public OpenWeatherMapWeatherGetterService(
             IOpenWeatherMapApiPathService openWeatherMapApiPathService,
             IWeatherHttpClient weatherHttpClient,
-            ILogger logger)
+            ILogger<OpenWeatherMapWeatherGetterService> logger)
         {
             _openWeatherMapApiPathService = openWeatherMapApiPathService;
             _weatherHttpClient = weatherHttpClient;
@@ -26,6 +27,15 @@ namespace Weather.Infrastructure.Service
 
         public async Task<WeatherDto> GetWeather(LocationDto location)
         {
+            if (location == null 
+                || (location.Latitude < -90 || location.Latitude > 90)
+                || (location.Longitude > 180 || location.Longitude < 0))
+            {
+                var exception = new FormatException("Location in wrong formant");
+                _logger.LogError("Location in wrong format", exception);
+                throw exception;
+            }
+
             _logger.LogTrace($"Call method get weather by location coords");
             try
             {
@@ -44,6 +54,13 @@ namespace Weather.Infrastructure.Service
 
         public async Task<WeatherDto> GetWeather(string cityName)
         {
+            if(string.IsNullOrEmpty(cityName))
+            {
+                var exception = new WrongCityNameException("City name cannot be null or empty");
+                _logger.LogError("City name cannot be null or empty", exception);
+                throw exception;
+            }
+
             _logger.LogTrace($"Call method get weather by city name");
             try
             {

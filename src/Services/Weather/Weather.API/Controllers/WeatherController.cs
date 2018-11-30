@@ -11,11 +11,11 @@ namespace Weather.API.Controllers
     public class WeatherController : ControllerBase
     {
         private readonly IWeatherGetterService _weatherGetterService;
-        private readonly ILogger _logger;
+        private readonly ILogger<WeatherController> _logger;
 
         public WeatherController(
              IWeatherGetterService weatherGetterService,
-             ILogger logger)
+             ILogger<WeatherController> logger)
          {
             _weatherGetterService = weatherGetterService;
             _logger = logger;
@@ -23,17 +23,17 @@ namespace Weather.API.Controllers
 
         // GET api/weather
         [HttpGet]
-        [Route("weather/city/{city}")]
+        [Route("city/{cityName}")]
         public async Task<ActionResult<WeatherDto>> Get(string cityName)
         {
             _logger.LogTrace($"Create request weather/city/{cityName}");
             var result = await _weatherGetterService.GetWeather(cityName);
             _logger.LogTrace($"End request weather/city/{cityName}");
-            return result.;
+            return result;
         }
 
         [HttpGet]
-        [Route("weather/location/{log}/{lan}")]
+        [Route("location/{log}/{lan}")]
         public async Task<ActionResult<WeatherDto>> Get(double log, double lan)
         {
             _logger.LogTrace($"Create request weather/city/{log}/{lan}");

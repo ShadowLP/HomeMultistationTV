@@ -1,12 +1,14 @@
-﻿namespace Weather.Domain.Entity
+﻿using System.Collections.Generic;
+
+namespace Weather.Domain.Entity
 {
-    public class WeatherDto : EntityDto
+    public class WeatherDto
     {
         public WeatherCooordDto Coord { get; set; }
 
         public SolarInfoDto Sys { get; set; }
 
-        public CurrentWeatherDto Weather { get; set; }
+        public IList<CurrentWeatherDto> Weather { get; set; }
 
         public MainWeatherInfoDto Main { get; set; }
 
@@ -21,6 +23,8 @@
         public string Name { get; set; }
 
         public int Cod { get; set; }
+
+        public int Id { get; set; }
 
     }
 }

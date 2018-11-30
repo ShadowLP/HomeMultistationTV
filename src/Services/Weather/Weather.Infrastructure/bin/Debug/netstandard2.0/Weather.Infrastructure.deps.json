@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "5e8b5f560a55984e1db8faefc4ae3c457b869f7c"
+    "signature": "da19fe5caf0b3425dcf9525fc126e481d5981136"
   },
   "compilationOptions": {},
   "targets": {
@@ -15,6 +15,7 @@
           "Microsoft.Extensions.Logging": "2.1.1",
           "NETStandard.Library": "2.0.3",
           "NLog": "4.5.11",
+          "Newtonsoft.Json": "12.0.1",
           "Weather.Domain": "1.0.0"
         },
         "runtime": {
@@ -123,6 +124,14 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Newtonsoft.Json/12.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.1.22727"
+          }
         }
       },
       "NLog/4.5.11": {
@@ -259,6 +268,13 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jmVyoEyk0In8r+AObYQyFKVFm7uSRzE0XSHSbEtBJcZDMV6DqJoyB4FLcHwprPVhAh826so0db3DIKXVnpGoPA==",
+      "path": "newtonsoft.json/12.0.1",
+      "hashPath": "newtonsoft.json.12.0.1.nupkg.sha512"
     },
     "NLog/4.5.11": {
       "type": "package",

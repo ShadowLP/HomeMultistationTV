@@ -14,17 +14,17 @@ namespace Weather.Infrastructure.Service
 
         public string GetWeatherByCityNamePath(string name)
         {
-            return $"{_settings.GetValue<string>("GetWeatherURL")}?q=name";
+            return $"{_settings.GetValue<string>("GetWeatherURL")}q={name}&APPID={_settings.GetValue<string>("WeatherApiToken")}";
         }
 
         public string GetWeatherByGeoCoordinatesPath(double lat, double lon)
         {
-            return $"{_settings.GetValue<string>("GetWeatherURL")}?lat={lat}&lon={lon}";
+            return $"{_settings.GetValue<string>("GetWeatherURL")}lat={lat}&lon={lon}&APPID={_settings.GetValue<string>("WeatherApiToken")}";
         }
 
         public string GetWeatherByZipCodePath(string zipCode)
         {
-            return $"{_settings.GetValue<string>("GetWeatherURL")}?zip={zipCode}";
+            return $"{_settings.GetValue<string>("GetWeatherURL")}zip={zipCode}&APPID={_settings.GetValue<string>("WeatherApiToken")}";
         }
     }
 }
