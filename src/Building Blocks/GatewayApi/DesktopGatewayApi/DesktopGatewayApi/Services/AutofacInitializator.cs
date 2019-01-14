@@ -1,5 +1,7 @@
 ﻿using Autofac;
 using Autofac.Extensions.DependencyInjection;
+using Autofac.Extras.CommonServiceLocator;
+using CommonServiceLocator;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -27,6 +29,8 @@ namespace DesktopGatewayApi.Services
             _builder.Populate(services);
 
             var container = _builder.Build();
+            var autofacServiceLocator = new AutofacServiceLocator(container);
+            ServiceLocator.SetLocatorProvider(() => autofacServiceLocator);
             return new AutofacServiceProvider(container);
         }
 

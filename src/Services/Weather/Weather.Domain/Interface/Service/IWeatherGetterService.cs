@@ -1,9 +1,10 @@
-﻿using System.Threading.Tasks;
+﻿using DesktopGatewayApi.Domain.Interfaces;
+using System.Threading.Tasks;
 using Weather.Domain.Entity;
 
 namespace Weather.Domain.Interface.Service
 {
-    public interface IWeatherGetterService : IAppConfig
+    public interface IWeatherGetterService
     {
         Task<WeatherDto> GetWeather(LocationDto location);
 

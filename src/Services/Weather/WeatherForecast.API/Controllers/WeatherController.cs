@@ -27,7 +27,7 @@ namespace Weather.API.Controllers
         public async Task<ActionResult<WeatherDto>> Get(string cityName)
         {
             _logger.LogTrace($"Create request weather/city/{cityName}");
-            var result = await _weatherGetterService.GetWeather(cityName);
+            WeatherDto result = await _weatherGetterService.GetWeather(cityName);
             _logger.LogTrace($"End request weather/city/{cityName}");
             return result;
         }

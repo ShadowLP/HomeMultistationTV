@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DesktopGatewayApi.Comain.Dto
+﻿namespace DesktopGatewayApi.Comain.Dto
 {
     public class WeatherDto
     {

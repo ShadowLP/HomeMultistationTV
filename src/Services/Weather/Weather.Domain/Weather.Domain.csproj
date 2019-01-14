@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Building Blocks\GatewayApi\DesktopGatewayApi\DesktopGatewayApi.Comain\DesktopGatewayApi.Domain.csproj" />
     <ProjectReference Include="..\..\..\Common\Common.Domain\Common.Domain.csproj" />
   </ItemGroup>
 

@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\Common\Common.Domain\Common.Domain.csproj" />
+    <ProjectReference Include="..\DesktopGatewayApi\DesktopGatewayApi.Comain\DesktopGatewayApi.Domain.csproj" />
     <ProjectReference Include="..\GatewayApi.Domain\GatewayApi.Domain.csproj" />
   </ItemGroup>
 

@@ -1741,11 +1741,22 @@
           "bin/placeholder/Common.Domain.dll": {}
         }
       },
+      "DesktopGatewayApi.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/DesktopGatewayApi.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DesktopGatewayApi.Domain.dll": {}
+        }
+      },
       "Weather.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Common.Domain": "1.0.0"
+          "Common.Domain": "1.0.0",
+          "DesktopGatewayApi.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Weather.Domain.dll": {}
@@ -5960,6 +5971,11 @@
       "type": "project",
       "path": "../src/Common/Common.Domain/Common.Domain.csproj",
       "msbuildProject": "../src/Common/Common.Domain/Common.Domain.csproj"
+    },
+    "DesktopGatewayApi.Domain/1.0.0": {
+      "type": "project",
+      "path": "../src/Building Blocks/GatewayApi/DesktopGatewayApi/DesktopGatewayApi.Comain/DesktopGatewayApi.Domain.csproj",
+      "msbuildProject": "../src/Building Blocks/GatewayApi/DesktopGatewayApi/DesktopGatewayApi.Comain/DesktopGatewayApi.Domain.csproj"
     },
     "Weather.Domain/1.0.0": {
       "type": "project",
