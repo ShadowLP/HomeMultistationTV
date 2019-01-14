@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DesktopGatewayApi.Domain.Interfaces
+﻿namespace Common.Domain.Interfaces
 {
     public interface ITranslator<in TSource, TDestination> : ITranslator
     {
@@ -18,3 +14,4 @@ namespace DesktopGatewayApi.Domain.Interfaces
         void Update(object source, object destination);
 
     }
+}

@@ -8,7 +8,7 @@ namespace DesktopGatewayApi.Controllers
     public class MainDashboardController : ControllerBase
     {
         [HttpGet]
-        public ActionResult<MainPageDto> GetMainInfo()
+        public ActionResult<MainDashboardDto> GetMainInfo()
         {
             return null;
         }

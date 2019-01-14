@@ -38,7 +38,7 @@ namespace GatewayApi.Infrastructure.Command
 
     public abstract class AsyncCommand<T> : IAsyncCommand<T>
     {
-        private readonly ILogger _logger;
+        protected readonly ILogger _logger;
 
         protected AsyncCommand(ILogger logger)
         {

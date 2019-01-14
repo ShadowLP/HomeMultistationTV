@@ -1,33 +1,50 @@
 ﻿using Common.Domain;
+using Common.Domain.Interfaces;
 using DesktopGatewayApi.Comain.Dto;
 using DesktopGatewayApi.Domain.ApiServices;
 using GatewayApi.Infrastructure.Command;
 using Microsoft.Extensions.Logging;
-using System;
+using Newtonsoft.Json;
 using System.Threading.Tasks;
 
 namespace DesktopGatewayApi.Command
 {
-    public class GetMainPageDtoCommand : AsyncCommand<MainPageDto>
+    public class GetMainPageDtoCommand : AsyncCommand<MainDashboardDto>
     {
-        private readonly IHttpClient _httpClient;
+        private readonly string _cityName;
+        private readonly ITranslator<WeatherDto, MainDashboardDto> _weaterDtoToMainDashboardTranslator;
+
         private IWeatherApiService _weatherApiService { get; }
 
         public GetMainPageDtoCommand(
             string cityName,
-            IHttpClient httpClient,
             IWeatherApiService weatherApiService,
+            ITranslator<WeatherDto, MainDashboardDto> weaterDtoToMainDashboardTranslator,
             ILogger logger) 
             : base(logger)
         {
-            _httpClient = httpClient;
+            _cityName = cityName;
             _weatherApiService = weatherApiService;
+            _weaterDtoToMainDashboardTranslator = weaterDtoToMainDashboardTranslator;
         }
 
 
-        protected override Task<MainPageDto> Run()
+        protected async override Task<MainDashboardDto> Run()
         {
-            var   _httpClient.GetAsJsonAsync(_weatherApiService.getWeatherApiServiceUri());
+            _logger.LogTrace("Start command GetMainPAgeDto {0}", _cityName);
+
+            var test = JsonConvert.DeserializeObject<WeatherDto>(await _weatherApiService.getWeatherByCity(_cityName));
+
+            _logger.LogDebug("Get object {0}", JsonConvert.SerializeObject(test));
+            var mainDashboardDtoObject = new MainDashboardDto();
+
+            _weaterDtoToMainDashboardTranslator.Update(test, mainDashboardDtoObject);
+
+            _logger.LogDebug("Get translated object object {0}", JsonConvert.SerializeObject(mainDashboardDtoObject));
+
+            _logger.LogTrace("End command GetMainPAgeDto {0}", _cityName);
+
+            return mainDashboardDtoObject;
         }
     }
 }

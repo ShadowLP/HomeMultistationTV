@@ -1,13 +1,16 @@
 ﻿using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using Autofac.Extras.CommonServiceLocator;
+using Common.Domain;
+using Common.Domain.Interfaces;
 using CommonServiceLocator;
+using DesktopGatewayApi.Domain.ApiServices;
+using GatewayApi.Infrastructure.Services;
+using GatewayApi.Infrastructure.Translator;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Weather.Infrastructure.Service;
 
 namespace DesktopGatewayApi.Services
 {
@@ -36,11 +39,20 @@ namespace DesktopGatewayApi.Services
 
         private void SetServices()
         {
+            _builder.RegisterType<WeatherApiService>()
+                .As<IWeatherApiService>()
+                .SingleInstance();
+
+            _builder.RegisterType<CommonHttpClient>()
+                .As<IHttpClient>()
+                .SingleInstance();
         }
 
         private void SetTranslators()
         {
-
+            _builder.RegisterType<GateawayTranslatorFactory>()
+                .As<ITranslatorFactory>()
+                .SingleInstance();
         }
     }
 }

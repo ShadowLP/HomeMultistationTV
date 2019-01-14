@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using DesktopGatewayApi.Domain.Interfaces;
+using Common.Domain.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;

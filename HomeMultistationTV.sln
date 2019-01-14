@@ -33,17 +33,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherSerivceTest", "Weath
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecast.API", "src\Services\Weather\WeatherForecast.API\WeatherForecast.API.csproj", "{B49DDE7A-1C03-4C72-8880-B7E928CA6C25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopGatewayApi.Domain", "src\Building Blocks\GatewayApi\DesktopGatewayApi\DesktopGatewayApi.Comain\DesktopGatewayApi.Domain.csproj", "{78AE8CD4-B081-49C7-8511-06AF113F702F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesktopGatewayApi.Domain", "src\Building Blocks\GatewayApi\DesktopGatewayApi\DesktopGatewayApi.Comain\DesktopGatewayApi.Domain.csproj", "{78AE8CD4-B081-49C7-8511-06AF113F702F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GatewayApi.Domain", "src\Building Blocks\GatewayApi\GatewayApi.Domain\GatewayApi.Domain.csproj", "{06BB4FF7-A03B-4B89-8318-C2937C5D9CB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GatewayApi.Domain", "src\Building Blocks\GatewayApi\GatewayApi.Domain\GatewayApi.Domain.csproj", "{06BB4FF7-A03B-4B89-8318-C2937C5D9CB9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GatewayApi.Infrastructure", "src\Building Blocks\GatewayApi\GatewayApi.Infrastructure\GatewayApi.Infrastructure.csproj", "{9B914F25-A9C3-4B1F-B810-EFA9B95EA857}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{38A18503-B478-4DA6-9B8A-7CDA06EAA004}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Services", "src\Common\Common.Services\Common.Services.csproj", "{3DB61406-F1F1-44DA-8B60-1A27FD151234}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Services", "src\Common\Common.Services\Common.Services.csproj", "{3DB61406-F1F1-44DA-8B60-1A27FD151234}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Domain", "src\Common\Common.Domain\Common.Domain.csproj", "{1C20447C-B2A5-472E-993A-32234C423E3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Domain", "src\Common\Common.Domain\Common.Domain.csproj", "{1C20447C-B2A5-472E-993A-32234C423E3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

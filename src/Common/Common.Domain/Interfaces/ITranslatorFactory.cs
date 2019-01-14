@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace DesktopGatewayApi.Domain.Interfaces
+namespace Common.Domain.Interfaces
 {
     public interface ITranslatorFactory
     {

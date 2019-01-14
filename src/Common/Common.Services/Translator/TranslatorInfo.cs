@@ -1,4 +1,4 @@
-﻿using DesktopGatewayApi.Domain.Interfaces;
+﻿using Common.Domain.Interfaces;
 using System;
 
 namespace GatewayApi.Infrastructure.Translator

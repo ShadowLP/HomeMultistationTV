@@ -4,11 +4,17 @@ using System.Text;
 
 namespace DesktopGatewayApi.Comain.Dto
 {
-    public class MainPageDto
+    public class MainDashboardDto
     {
-        WeatherDto Weather { get; set; }
+        public MainDashboardDto()
+        {
+            Weather = new WeatherDto();
+            WeatherForecast = new List<WeatherDto>();
+        }
 
-        IList<WeatherDto> WeatherForecast { get; set; }
+        public WeatherDto Weather { get; set; }
+
+        public IList<WeatherDto> WeatherForecast { get; set; }
 
     }
 }

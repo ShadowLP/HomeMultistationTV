@@ -1,12 +1,10 @@
 ﻿using AutoMapper;
-using DesktopGatewayApi.Domain.Interfaces;
+using Common.Domain.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace GatewayApi.Infrastructure.Translator
+namespace Common.Services.Translator
 {
-    class AutomapperTranslator<TSourse, TDestination> : ITranslator<TSourse, TDestination>
+    public class AutomapperTranslator<TSourse, TDestination> : ITranslator<TSourse, TDestination>
     {
         private readonly Lazy<IMapper> _mapper;
 
