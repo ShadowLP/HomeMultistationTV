@@ -1,9 +1,0 @@
-C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.Domain\bin\Debug\netstandard2.0\Weather.Domain.deps.json
-C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.Domain\bin\Debug\netstandard2.0\Weather.Domain.dll
-C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.Domain\bin\Debug\netstandard2.0\Weather.Domain.pdb
-C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.Domain\obj\Debug\netstandard2.0\Weather.Domain.csprojAssemblyReference.cache
-C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.Domain\obj\Debug\netstandard2.0\Weather.Domain.csproj.CoreCompileInputs.cache
-C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.Domain\obj\Debug\netstandard2.0\Weather.Domain.AssemblyInfoInputs.cache
-C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.Domain\obj\Debug\netstandard2.0\Weather.Domain.AssemblyInfo.cs
-C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.Domain\obj\Debug\netstandard2.0\Weather.Domain.dll
-C:\Users\roman.guschin\Documents\GitHub\HomeMultistationTV\src\Services\Weather\Weather.Domain\obj\Debug\netstandard2.0\Weather.Domain.pdb
