@@ -4,6 +4,7 @@ using Autofac.Extras.CommonServiceLocator;
 using Common.Domain;
 using Common.Domain.Interfaces;
 using CommonServiceLocator;
+using DesktopGatewayApi.Command;
 using DesktopGatewayApi.Domain.ApiServices;
 using GatewayApi.Infrastructure.Services;
 using GatewayApi.Infrastructure.Translator;
@@ -46,12 +47,17 @@ namespace DesktopGatewayApi.Services
             _builder.RegisterType<CommonHttpClient>()
                 .As<IHttpClient>()
                 .SingleInstance();
+
+            _builder.RegisterType<MainDashboardCommandFactory>()
+                .As<MainDashboardCommandFactory>()
+                .SingleInstance();
         }
 
         private void SetTranslators()
         {
             _builder.RegisterType<GateawayTranslatorFactory>()
                 .As<ITranslatorFactory>()
+                .OnActivating(factory => factory.Instance.Initialize())
                 .SingleInstance();
         }
     }

@@ -1,5 +1,8 @@
 ﻿using DesktopGatewayApi.Comain.Dto;
+using DesktopGatewayApi.Command;
+using GatewayApi.Domain.Interface;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace DesktopGatewayApi.Controllers
 {
@@ -7,10 +10,19 @@ namespace DesktopGatewayApi.Controllers
     [ApiController]
     public class MainDashboardController : ControllerBase
     {
-        [HttpGet]
-        public ActionResult<MainDashboardDto> GetMainInfo()
+        private readonly MainDashboardCommandFactory _mainDashboardCommandFactory;
+
+        public MainDashboardController(
+            MainDashboardCommandFactory mainDashboardCommandFactory)
         {
-            return null;
+            _mainDashboardCommandFactory = mainDashboardCommandFactory;
+        }
+
+        [HttpGet]
+        [Route("city/{cityName}")]
+        public Task<ICommandDataResults<MainDashboardDto>> GetMainInfo(string cityName)
+        {
+            return _mainDashboardCommandFactory.GeGetMainPageDto(cityName).Execute();
         }
     }
 }

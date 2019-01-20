@@ -12,20 +12,20 @@ namespace DesktopGatewayApi.Command
     public class GetMainPageDtoCommand : AsyncCommand<MainDashboardDto>
     {
         private readonly string _cityName;
-        private readonly ITranslator<WeatherDto, MainDashboardDto> _weaterDtoToMainDashboardTranslator;
+        private readonly ITranslatorFactory _translatorFactory;
 
         private IWeatherApiService _weatherApiService { get; }
 
         public GetMainPageDtoCommand(
             string cityName,
             IWeatherApiService weatherApiService,
-            ITranslator<WeatherDto, MainDashboardDto> weaterDtoToMainDashboardTranslator,
+            ITranslatorFactory translatirFactory,
             ILogger logger) 
             : base(logger)
         {
             _cityName = cityName;
             _weatherApiService = weatherApiService;
-            _weaterDtoToMainDashboardTranslator = weaterDtoToMainDashboardTranslator;
+            _translatorFactory = translatirFactory;
         }
 
 
@@ -38,7 +38,7 @@ namespace DesktopGatewayApi.Command
             _logger.LogDebug("Get object {0}", JsonConvert.SerializeObject(test));
             var mainDashboardDtoObject = new MainDashboardDto();
 
-            _weaterDtoToMainDashboardTranslator.Update(test, mainDashboardDtoObject);
+            _translatorFactory.GetTranslator<WeatherDto, MainDashboardDto>().Update(test, mainDashboardDtoObject);
 
             _logger.LogDebug("Get translated object object {0}", JsonConvert.SerializeObject(mainDashboardDtoObject));
 

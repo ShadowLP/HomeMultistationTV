@@ -10,22 +10,22 @@ namespace DesktopGatewayApi.Command
     public class MainDashboardCommandFactory
     {
         private readonly IWeatherApiService _weatherApiService;
-        private readonly ITranslator<WeatherDto, MainDashboardDto> _weatherDtoToMainDashboardDtoTranslator;
+        private readonly ITranslatorFactory _translatorFactory;
         private readonly ILogger _logger;
 
         public MainDashboardCommandFactory(
             IWeatherApiService weatherApiService,
-            ITranslator<WeatherDto, MainDashboardDto> weatherDtoToMainDashboardDtoTranslator,
+            ITranslatorFactory translatorFactory,
             ILogger logger)
         {
             _weatherApiService = weatherApiService;
-            _weatherDtoToMainDashboardDtoTranslator = weatherDtoToMainDashboardDtoTranslator;
+            _translatorFactory = translatorFactory;
             _logger = logger;
         }
 
         public virtual IAsyncCommand<MainDashboardDto> GeGetMainPageDto(string cityName)
         {
-            return new GetMainPageDtoCommand(cityName, _weatherApiService, _weatherDtoToMainDashboardDtoTranslator, _logger);
+            return new GetMainPageDtoCommand(cityName, _weatherApiService, _translatorFactory, _logger);
         }
     }
 }
