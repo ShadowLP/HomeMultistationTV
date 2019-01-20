@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using DesktopGatewayApi.Comain.Dto;
+using DesktopGatewayApi.Domain.Dto;
 using System;
 
 namespace GatewayApi.Infrastructure.Translator
@@ -12,7 +12,7 @@ namespace GatewayApi.Infrastructure.Translator
 
         protected override void RegisterTranslators(IMapperConfigurationExpression configurationExpression)
         {
-            RegisterTranslator<WeatherDtoToMainDashboardDtoTranslator, WeatherDto, MainDashboardDto>(configurationExpression);
+            RegisterTranslator<WeatherDtoToMainDashboardDtoTranslator, Weather.Communication.Entity.WeatherDto, WeatherDto>(configurationExpression);
         }
     }
 }

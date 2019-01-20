@@ -1,6 +1,6 @@
 ﻿using Common.Domain;
 using Common.Domain.Interfaces;
-using DesktopGatewayApi.Comain.Dto;
+using DesktopGatewayApi.Domain.Dto;
 using DesktopGatewayApi.Domain.ApiServices;
 using GatewayApi.Infrastructure.Command;
 using Microsoft.Extensions.Logging;
@@ -33,12 +33,12 @@ namespace DesktopGatewayApi.Command
         {
             _logger.LogTrace("Start command GetMainPAgeDto {0}", _cityName);
 
-            var test = JsonConvert.DeserializeObject<WeatherDto>(await _weatherApiService.getWeatherByCity(_cityName));
+            var test = JsonConvert.DeserializeObject<Weather.Communication.Entity.WeatherDto>(await _weatherApiService.getWeatherByCity(_cityName));
 
             _logger.LogDebug("Get object {0}", JsonConvert.SerializeObject(test));
             var mainDashboardDtoObject = new MainDashboardDto();
 
-            _translatorFactory.GetTranslator<WeatherDto, MainDashboardDto>().Update(test, mainDashboardDtoObject);
+            _translatorFactory.GetTranslator<Weather.Communication.Entity.WeatherDto, WeatherDto>().Update(test, mainDashboardDtoObject.Weather);
 
             _logger.LogDebug("Get translated object object {0}", JsonConvert.SerializeObject(mainDashboardDtoObject));
 

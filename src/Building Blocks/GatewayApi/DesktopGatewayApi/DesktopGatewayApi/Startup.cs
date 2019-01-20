@@ -29,14 +29,14 @@ namespace DesktopGatewayApi
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             
-            services.Configure<DesktopApiGatewayConfigService>(Configuration.GetSection("WeatherApiConfig"));
+            services.Configure<DesktopApiGatewayConfigService>(Configuration.GetSection("GatewayApi"));
 
             var configurationBuilder = new ConfigurationBuilder();
             var path = Path.Combine(Directory.GetCurrentDirectory(), "appsettings.json");
             configurationBuilder.AddJsonFile(path, false);
 
             var root = configurationBuilder.Build();
-            var appSettings = root.GetSection("WeatherApiConfig");
+            var appSettings = root.GetSection("GatewayApi");
 
             var autofacInit = new AutofacInitializator(appSettings);
             return autofacInit.GetServiceContainer(services);

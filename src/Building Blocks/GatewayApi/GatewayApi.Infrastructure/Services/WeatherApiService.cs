@@ -10,12 +10,12 @@ namespace GatewayApi.Infrastructure.Services
     {
         private readonly IWeatherServiceApiPathService _weatherServiceApiPathService;
         private readonly IHttpClient _httpClient;
-        private readonly ILogger _logger;
+        private readonly ILogger<WeatherApiService> _logger;
 
         public WeatherApiService(
             IWeatherServiceApiPathService weatherServiceApiPathService,
             IHttpClient httpClient,
-            ILogger logger)
+            ILogger<WeatherApiService> logger)
         {
             _weatherServiceApiPathService = weatherServiceApiPathService;
             _httpClient = httpClient;

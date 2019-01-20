@@ -14,12 +14,12 @@ namespace GatewayApi.Infrastructure.Services
 
         public string getWeatherByCityName(string cityName)
         {
-            return $"{_settings.GetValue<string>("ServiceWeatherCity")}{cityName}";
+            return $"{_settings.GetSection("WeatherService").GetValue<string>("ServiceWeatherCity")}{cityName}";
         }
 
         public string getWeatherByLocation(double log, double lan)
         {
-            return $"{_settings.GetValue<string>("ServiceWeatherCoords")}/{log}/{lan}";
+            return $"{_settings.GetSection("WeatherService").GetValue<string>("ServiceWeatherCoords")}/{log}/{lan}";
         }
     }
 }

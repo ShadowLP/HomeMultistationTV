@@ -6,6 +6,7 @@ using Common.Domain.Interfaces;
 using CommonServiceLocator;
 using DesktopGatewayApi.Command;
 using DesktopGatewayApi.Domain.ApiServices;
+using DesktopGatewayApi.Domain.Interfaces;
 using GatewayApi.Infrastructure.Services;
 using GatewayApi.Infrastructure.Translator;
 using Microsoft.Extensions.Configuration;
@@ -42,6 +43,11 @@ namespace DesktopGatewayApi.Services
         {
             _builder.RegisterType<WeatherApiService>()
                 .As<IWeatherApiService>()
+                .SingleInstance();
+
+            _builder.RegisterType<WeatherServiceApiPathService>()
+                .As<IWeatherServiceApiPathService>()
+                .WithParameter("settings", _config)
                 .SingleInstance();
 
             _builder.RegisterType<CommonHttpClient>()

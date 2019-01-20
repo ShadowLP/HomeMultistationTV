@@ -1,4 +1,4 @@
-﻿using DesktopGatewayApi.Comain.Dto;
+﻿using DesktopGatewayApi.Domain.Dto;
 using DesktopGatewayApi.Command;
 using GatewayApi.Domain.Interface;
 using Microsoft.AspNetCore.Mvc;

@@ -45,6 +45,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Services", "src\Comm
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Domain", "src\Common\Common.Domain\Common.Domain.csproj", "{1C20447C-B2A5-472E-993A-32234C423E3D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Communication", "src\Services\Weather\Weather.Communication\Weather.Communication.csproj", "{68594DA7-50F2-4DB4-A5D7-BF2DA66E3607}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -103,6 +105,10 @@ Global
 		{1C20447C-B2A5-472E-993A-32234C423E3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C20447C-B2A5-472E-993A-32234C423E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C20447C-B2A5-472E-993A-32234C423E3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68594DA7-50F2-4DB4-A5D7-BF2DA66E3607}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68594DA7-50F2-4DB4-A5D7-BF2DA66E3607}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68594DA7-50F2-4DB4-A5D7-BF2DA66E3607}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68594DA7-50F2-4DB4-A5D7-BF2DA66E3607}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -125,6 +131,7 @@ Global
 		{9B914F25-A9C3-4B1F-B810-EFA9B95EA857} = {F48553A4-3542-4FF8-B1DD-0C564D995C4F}
 		{3DB61406-F1F1-44DA-8B60-1A27FD151234} = {38A18503-B478-4DA6-9B8A-7CDA06EAA004}
 		{1C20447C-B2A5-472E-993A-32234C423E3D} = {38A18503-B478-4DA6-9B8A-7CDA06EAA004}
+		{68594DA7-50F2-4DB4-A5D7-BF2DA66E3607} = {21478D97-7FBB-40C7-90F8-65BFD477AB73}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {21C8C599-054B-4837-B441-7E92C7DE5983}

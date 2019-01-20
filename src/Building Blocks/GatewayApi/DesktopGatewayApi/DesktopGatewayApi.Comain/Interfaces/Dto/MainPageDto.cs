@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DesktopGatewayApi.Comain.Dto
+namespace DesktopGatewayApi.Domain.Dto
 {
     public class MainDashboardDto
     {

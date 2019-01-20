@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
 using Common.Services.Translator;
-using DesktopGatewayApi.Comain.Dto;
+using DesktopGatewayApi.Domain.Dto;
 using System;
 
 namespace GatewayApi.Infrastructure.Translator
 {
-    public class WeatherDtoToMainDashboardDtoTranslator : AutomapperTranslator<WeatherDto, MainDashboardDto>
+    public class WeatherDtoToMainDashboardDtoTranslator : AutomapperTranslator<Weather.Communication.Entity.WeatherDto, WeatherDto>
     {
         public WeatherDtoToMainDashboardDtoTranslator(
             IMapperConfigurationExpression configurationExpression,
@@ -19,10 +19,10 @@ namespace GatewayApi.Infrastructure.Translator
             base.Configure();
 
             Mapping
-                .ForMember(m => m.Weather.Description,  o => o.MapFrom(m => m.Description))
-                .ForMember(m => m.Weather.Pressure,     o => o.MapFrom(m => m.Pressure))
-                .ForMember(m => m.Weather.Temperature,  o => o.MapFrom(m => m.Temperature))
-                .ForMember(m => m.Weather.WindSpeed,    o => o.MapFrom(m => m.WindSpeed));
+                .ForMember(m => m.Pressure,     o => o.MapFrom(m => m.Main.Pressure))
+                .ForMember(m => m.Temperature,  o => o.MapFrom(m => m.Main.Temp))
+                .ForMember(m => m.Humindity, o => o.MapFrom(m => m.Main.Humidity))
+                .ForMember(m => m.WindSpeed,    o => o.MapFrom(m => m.Wind.Speed));
         }
     }
 }

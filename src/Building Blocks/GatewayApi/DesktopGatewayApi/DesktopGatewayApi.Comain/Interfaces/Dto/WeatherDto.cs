@@ -1,4 +1,4 @@
-﻿namespace DesktopGatewayApi.Comain.Dto
+﻿namespace DesktopGatewayApi.Domain.Dto
 {
     public class WeatherDto
     {
@@ -6,8 +6,8 @@
 
         public double Pressure { get; set; }
 
-        public string Description { get; set; }
-
+        public double Humindity { get; set; }
+        
         public double WindSpeed { get; set; }
     }
 }

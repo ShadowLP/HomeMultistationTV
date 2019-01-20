@@ -1,6 +1,6 @@
 ﻿using Common.Domain;
 using Common.Domain.Interfaces;
-using DesktopGatewayApi.Comain.Dto;
+using DesktopGatewayApi.Domain.Dto;
 using DesktopGatewayApi.Domain.ApiServices;
 using GatewayApi.Domain.Interface;
 using Microsoft.Extensions.Logging;
@@ -11,12 +11,12 @@ namespace DesktopGatewayApi.Command
     {
         private readonly IWeatherApiService _weatherApiService;
         private readonly ITranslatorFactory _translatorFactory;
-        private readonly ILogger _logger;
+        private readonly ILogger<MainDashboardCommandFactory> _logger;
 
         public MainDashboardCommandFactory(
             IWeatherApiService weatherApiService,
             ITranslatorFactory translatorFactory,
-            ILogger logger)
+            ILogger<MainDashboardCommandFactory> logger)
         {
             _weatherApiService = weatherApiService;
             _translatorFactory = translatorFactory;
