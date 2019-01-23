@@ -7,8 +7,8 @@
 *.suo
 *.user
 *.sdf
-bin/
-obj/
+\bin*
+\obj*
 */Debug/*
 */Release/*
 *.opensdf
@@ -19,5 +19,3 @@ TestResult.xml
 Version.cs
 Version.h
 Version.cpp
-*/bin/*
-*/obj/*
