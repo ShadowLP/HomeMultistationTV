@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extras.CommonServiceLocator" Version="5.0.0" />
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.1.1" />
+    <PackageReference Include="NLog" Version="4.5.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Common.Domain\Common.Domain.csproj" />
+    <ProjectReference Include="..\..\..\Common\Common.Services\Common.Services.csproj" />
+    <ProjectReference Include="..\..\..\Services\Weather\Weather.Communication\Weather.Communication.csproj" />
+    <ProjectReference Include="..\DesktopGatewayApi\DesktopGatewayApi.Comain\DesktopGatewayApi.Domain.csproj" />
+    <ProjectReference Include="..\GatewayApi.Domain\GatewayApi.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

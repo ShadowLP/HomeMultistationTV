@@ -25,6 +25,26 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Common.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Common.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.Domain.dll": {}
+        }
+      },
+      "DesktopGatewayApi.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/DesktopGatewayApi.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DesktopGatewayApi.Domain.dll": {}
+        }
       }
     }
   },
@@ -168,10 +188,22 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Common.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../../Common/Common.Domain/Common.Domain.csproj",
+      "msbuildProject": "../../../Common/Common.Domain/Common.Domain.csproj"
+    },
+    "DesktopGatewayApi.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../../Building Blocks/GatewayApi/DesktopGatewayApi/DesktopGatewayApi.Comain/DesktopGatewayApi.Domain.csproj",
+      "msbuildProject": "../../../Building Blocks/GatewayApi/DesktopGatewayApi/DesktopGatewayApi.Comain/DesktopGatewayApi.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "Common.Domain >= 1.0.0",
+      "DesktopGatewayApi.Domain >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -204,7 +236,14 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\roman.guschin\\Documents\\GitHub\\HomeMultistationTV\\src\\Building Blocks\\GatewayApi\\DesktopGatewayApi\\DesktopGatewayApi.Comain\\DesktopGatewayApi.Domain.csproj": {
+              "projectPath": "C:\\Users\\roman.guschin\\Documents\\GitHub\\HomeMultistationTV\\src\\Building Blocks\\GatewayApi\\DesktopGatewayApi\\DesktopGatewayApi.Comain\\DesktopGatewayApi.Domain.csproj"
+            },
+            "C:\\Users\\roman.guschin\\Documents\\GitHub\\HomeMultistationTV\\src\\Common\\Common.Domain\\Common.Domain.csproj": {
+              "projectPath": "C:\\Users\\roman.guschin\\Documents\\GitHub\\HomeMultistationTV\\src\\Common\\Common.Domain\\Common.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

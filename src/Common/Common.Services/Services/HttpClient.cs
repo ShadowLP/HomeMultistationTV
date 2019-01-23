@@ -1,18 +1,18 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Common.Domain;
+using Microsoft.Extensions.Logging;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Weather.Domain.Interface.Service;
 
 namespace Weather.Infrastructure.Service
 {
-    public class WeatherHttpClient : IWeatherHttpClient
+    public class CommonHttpClient : IHttpClient
     {
-        private readonly ILogger<WeatherHttpClient> _logger;
-        private HttpClient _httpClient;
+        private readonly ILogger<HttpClient> _logger;
+        private System.Net.Http.HttpClient _httpClient;
 
-        public WeatherHttpClient(ILogger<WeatherHttpClient> logger)
+        public CommonHttpClient(ILogger<HttpClient> logger)
         {
-            _httpClient = new HttpClient();
+            _httpClient = new System.Net.Http.HttpClient();
             _logger = logger;
         }
 

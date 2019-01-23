@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Common.Domain;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using System;
 using System.Threading.Tasks;
@@ -12,12 +13,12 @@ namespace Weather.Infrastructure.Service
     public class OpenWeatherMapWeatherGetterService : IWeatherGetterService
     {
         private readonly IOpenWeatherMapApiPathService _openWeatherMapApiPathService;
-        private readonly IWeatherHttpClient _weatherHttpClient;
+        private readonly IHttpClient _weatherHttpClient;
         private readonly ILogger<OpenWeatherMapWeatherGetterService> _logger;
 
         public OpenWeatherMapWeatherGetterService(
             IOpenWeatherMapApiPathService openWeatherMapApiPathService,
-            IWeatherHttpClient weatherHttpClient,
+            IHttpClient weatherHttpClient,
             ILogger<OpenWeatherMapWeatherGetterService> logger)
         {
             _openWeatherMapApiPathService = openWeatherMapApiPathService;

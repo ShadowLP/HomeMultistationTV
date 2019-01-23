@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 
-namespace Weather.Domain.Interface.Service
+namespace Common.Domain
 {
-    public interface IWeatherHttpClient 
+    public interface IHttpClient 
     {
         Task<string> GetAsJsonAsync(string requestUri);
     }

@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using DesktopGatewayApi.Domain.Interfaces;
+using System.Threading.Tasks;
 using Weather.Domain.Entity;
 
 namespace Weather.Domain.Interface.Service
