@@ -30,10 +30,11 @@
   },
   "libraries": {
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "sha512": "bLpT1f/SFlO1CzqXG12KnJzpZs6lv24uX2Rzi4Fmm0noJpNlnWRVryuO3yK18Ca04t/YHcO1e1Z0WDfjseqNzw==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -176,23 +177,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\roman.guschin\\.nuget\\packages\\": {},
+    "C:\\Users\\Roman\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\roman.guschin\\Documents\\GitHub\\HomeMultistationTV\\src\\DesktopApp\\Windows\\HomeMultistationTV.WindowsDesktop.Domain\\HomeMultistationTV.WindowsDesktop.Domain.csproj",
+      "projectUniqueName": "E:\\HomeMultistationTV\\HomeMultistationTV\\src\\DesktopApp\\Windows\\HomeMultistationTV.WindowsDesktop.Domain\\HomeMultistationTV.WindowsDesktop.Domain.csproj",
       "projectName": "HomeMultistationTV.WindowsDesktop.Domain",
-      "projectPath": "C:\\Users\\roman.guschin\\Documents\\GitHub\\HomeMultistationTV\\src\\DesktopApp\\Windows\\HomeMultistationTV.WindowsDesktop.Domain\\HomeMultistationTV.WindowsDesktop.Domain.csproj",
-      "packagesPath": "C:\\Users\\roman.guschin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\roman.guschin\\Documents\\GitHub\\HomeMultistationTV\\src\\DesktopApp\\Windows\\HomeMultistationTV.WindowsDesktop.Domain\\obj\\",
+      "projectPath": "E:\\HomeMultistationTV\\HomeMultistationTV\\src\\DesktopApp\\Windows\\HomeMultistationTV.WindowsDesktop.Domain\\HomeMultistationTV.WindowsDesktop.Domain.csproj",
+      "packagesPath": "C:\\Users\\Roman\\.nuget\\packages\\",
+      "outputPath": "E:\\HomeMultistationTV\\HomeMultistationTV\\src\\DesktopApp\\Windows\\HomeMultistationTV.WindowsDesktop.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\roman.guschin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Roman\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

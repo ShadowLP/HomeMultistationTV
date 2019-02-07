@@ -33,12 +33,12 @@ namespace DesktopGatewayApi.Command
         {
             _logger.LogTrace("Start command GetMainPAgeDto {0}", _cityName);
 
-            var test = JsonConvert.DeserializeObject<WeatherDto>(await _weatherApiService.getWeatherByCity(_cityName));
+            var resultObject = JsonConvert.DeserializeObject<WeatherDto>(await _weatherApiService.getWeatherByCity(_cityName));
 
-            _logger.LogDebug("Get object {0}", JsonConvert.SerializeObject(test));
+            _logger.LogDebug("Get object {0}", JsonConvert.SerializeObject(resultObject));
             var mainDashboardDtoObject = new MainDashboardDto();
 
-            _translatorFactory.GetTranslator<WeatherDto, MainDashboardDto>().Update(test, mainDashboardDtoObject);
+            _translatorFactory.GetTranslator<WeatherDto, MainDashboardDto>().Update(resultObject, mainDashboardDtoObject);
 
             _logger.LogDebug("Get translated object object {0}", JsonConvert.SerializeObject(mainDashboardDtoObject));
 

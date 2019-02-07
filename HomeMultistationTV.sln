@@ -11,10 +11,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{7F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Windows", "Windows", "{7FA4AF37-1226-450A-9A89-E54B104ED06D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeMultistationTV.WindowsDesktop.Domain", "src\DesktopApp\Windows\HomeMultistationTV.WindowsDesktop.Domain\HomeMultistationTV.WindowsDesktop.Domain.csproj", "{85F5BC0A-D527-43AD-94FB-6E9109E248A7}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeMultistationTV.WindowsDesktop.Infrastruct", "src\DesktopApp\Windows\HomeMultistationTV.WindowsDesktop.Infrastruct\HomeMultistationTV.WindowsDesktop.Infrastruct.csproj", "{598CDB6F-350F-4391-8AC5-2A13230497C1}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeMultistation.TV.WindowDesktop.App", "src\DesktopApp\Windows\HomeMultistation.TV.WindowDesktop.App\HomeMultistation.TV.WindowDesktop.App.csproj", "{3297FAFD-CC7E-4032-88DC-34301CA23200}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Weather", "Weather", "{21478D97-7FBB-40C7-90F8-65BFD477AB73}"
@@ -45,20 +41,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Services", "src\Comm
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Domain", "src\Common\Common.Domain\Common.Domain.csproj", "{1C20447C-B2A5-472E-993A-32234C423E3D}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeMultistationTV.WindowsDesktop.Domain", "src\DesktopApp\Windows\HomeMultistationTV.WindowsDesktop.Domain\HomeMultistationTV.WindowsDesktop.Domain.csproj", "{872C9718-4D20-4B4E-AED7-67170C77527D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeMultistationTV.WindowsDesktop.Infrastruct", "src\DesktopApp\Windows\HomeMultistationTV.WindowsDesktop.Infrastruct\HomeMultistationTV.WindowsDesktop.Infrastruct.csproj", "{D6C35FD9-FF3E-46B8-B99E-83CE133F16EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{85F5BC0A-D527-43AD-94FB-6E9109E248A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{85F5BC0A-D527-43AD-94FB-6E9109E248A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{85F5BC0A-D527-43AD-94FB-6E9109E248A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{85F5BC0A-D527-43AD-94FB-6E9109E248A7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{598CDB6F-350F-4391-8AC5-2A13230497C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{598CDB6F-350F-4391-8AC5-2A13230497C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{598CDB6F-350F-4391-8AC5-2A13230497C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{598CDB6F-350F-4391-8AC5-2A13230497C1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3297FAFD-CC7E-4032-88DC-34301CA23200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3297FAFD-CC7E-4032-88DC-34301CA23200}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3297FAFD-CC7E-4032-88DC-34301CA23200}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -103,14 +95,20 @@ Global
 		{1C20447C-B2A5-472E-993A-32234C423E3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C20447C-B2A5-472E-993A-32234C423E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C20447C-B2A5-472E-993A-32234C423E3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{872C9718-4D20-4B4E-AED7-67170C77527D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{872C9718-4D20-4B4E-AED7-67170C77527D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{872C9718-4D20-4B4E-AED7-67170C77527D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{872C9718-4D20-4B4E-AED7-67170C77527D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6C35FD9-FF3E-46B8-B99E-83CE133F16EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6C35FD9-FF3E-46B8-B99E-83CE133F16EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6C35FD9-FF3E-46B8-B99E-83CE133F16EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6C35FD9-FF3E-46B8-B99E-83CE133F16EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7FA4AF37-1226-450A-9A89-E54B104ED06D} = {B45D2273-2B5F-4C23-95C2-86C413D0A911}
-		{85F5BC0A-D527-43AD-94FB-6E9109E248A7} = {7FA4AF37-1226-450A-9A89-E54B104ED06D}
-		{598CDB6F-350F-4391-8AC5-2A13230497C1} = {7FA4AF37-1226-450A-9A89-E54B104ED06D}
 		{3297FAFD-CC7E-4032-88DC-34301CA23200} = {7FA4AF37-1226-450A-9A89-E54B104ED06D}
 		{21478D97-7FBB-40C7-90F8-65BFD477AB73} = {7FEA5C26-D3FA-43EE-A9DB-4E93714DC06B}
 		{28D25D57-3288-4571-B9B2-0FCB314A2149} = {21478D97-7FBB-40C7-90F8-65BFD477AB73}
@@ -125,6 +123,8 @@ Global
 		{9B914F25-A9C3-4B1F-B810-EFA9B95EA857} = {F48553A4-3542-4FF8-B1DD-0C564D995C4F}
 		{3DB61406-F1F1-44DA-8B60-1A27FD151234} = {38A18503-B478-4DA6-9B8A-7CDA06EAA004}
 		{1C20447C-B2A5-472E-993A-32234C423E3D} = {38A18503-B478-4DA6-9B8A-7CDA06EAA004}
+		{872C9718-4D20-4B4E-AED7-67170C77527D} = {7FA4AF37-1226-450A-9A89-E54B104ED06D}
+		{D6C35FD9-FF3E-46B8-B99E-83CE133F16EF} = {7FA4AF37-1226-450A-9A89-E54B104ED06D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {21C8C599-054B-4837-B441-7E92C7DE5983}
